@@ -1,8 +1,12 @@
 name: Cypress Testss
 
+name: Master
 on:
+  push:
+    branches:
+      - master
   schedule:
-    - cron: "1 * * * *"
+    - cron: '*/1 * * * *'
 
 jobs:
   cypress-run:
