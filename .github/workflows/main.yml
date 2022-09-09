@@ -4,10 +4,6 @@ on:
   schedule:
     - cron: "* * * * *"
 
-on:
-  schedule:
-  - cron: "0 0 * * *"
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
