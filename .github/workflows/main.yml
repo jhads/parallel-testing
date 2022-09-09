@@ -1,5 +1,7 @@
 name: Cypress Tests
 
+name: Do things every 1 minute
+on:
   schedule:
     - cron: "* * * * *"
 
