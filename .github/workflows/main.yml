@@ -1,8 +1,12 @@
-name: Cypress Tests
+name: Cypress Testss
 
 on:
   schedule:
     - cron: "* * * * *"
+
+on:
+  schedule:
+  - cron: "0 0 * * *"
 
 jobs:
   cypress-run:
