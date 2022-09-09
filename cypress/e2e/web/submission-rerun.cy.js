@@ -175,7 +175,7 @@ describe('Submission Rerun', () => {
  users.forEach(names => {
       it(`Enters ${names}`, () => {
         cy.get('input[class="input"]').type(names)
-        cy.contains('Send').click()
+        // cy.contains('Send').click()
       });
   });
 })
