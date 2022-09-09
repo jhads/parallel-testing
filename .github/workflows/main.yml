@@ -1,6 +1,5 @@
 name: Cypress Testss
 
-name: Master
 on:
   push:
     branches:
