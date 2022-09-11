@@ -1,8 +1,7 @@
-name: Cypress Tests
+name: Cypress Tests - Parallel
 
 on:
-  schedule:
-    - cron: '* * 1,3,4,8,10,11,15,19,22,26 * *'
+  [push]
   workflow_dispatch:
 
 jobs:
@@ -15,4 +14,5 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           install-command: npm install
+          record: true
           parallel: true
