@@ -20,6 +20,5 @@ jobs:
           record: true
           parallel: true
           command: npm run cypress:record
-          spec: cypress/e2e/web
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
