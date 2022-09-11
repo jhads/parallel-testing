@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         # run 3 copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
+        containers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
@@ -20,5 +20,6 @@ jobs:
           record: true
           parallel: true
           command: npm run cypress:record
+          spec: cypress/e2e/web/*
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
