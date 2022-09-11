@@ -10,7 +10,6 @@ jobs:
       matrix:
         # run 3 copies of the current job in parallel
         containers: [1, 2, 3, 4, 5]
-        container: cypress/browsers:node12.14.1-chrome85-ff81
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
