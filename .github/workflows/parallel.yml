@@ -1,6 +1,9 @@
 name: Cypress Tests - Parallel
 
-on: push
+on:
+  schedule:
+    - cron: '5 4 1,4,7,14,15,17,21,25,28 * *' // At 04:05 on day-of-month 1, 4, 7, 14, 15, 17, 21, 25, and 28.
+  workflow_dispatch:
 
 jobs:
   cypress-run:
@@ -8,7 +11,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # run 3 copies of the current job in parallel
         containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout

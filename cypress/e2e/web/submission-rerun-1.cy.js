@@ -113,8 +113,8 @@ describe('Form Submission 1', () => {
  users.forEach(names => {
       it(`Enters ${names}`, () => {
         cy.get('input[class="input"]').type(names)
-        cy.contains('Send')
-        // cy.contains('See you in')
+        cy.contains('Send').click()
+        cy.contains('See you in')
       });
   });
 })
