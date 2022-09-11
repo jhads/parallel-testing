@@ -1,7 +1,6 @@
 name: Cypress Tests - Parallel
 
 on: push
-  workflow_dispatch:
 
 jobs:
   cypress-run:
