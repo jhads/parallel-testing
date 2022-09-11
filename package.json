@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:record": "cypress run --record --key 3679b9ed-ee3d-46b6-8ec4-7de34e62ffb0"
+    "cypress:record": "cypress run --record --parallel --key 3679b9ed-ee3d-46b6-8ec4-7de34e62ffb0"
   },
   "author": "",
   "license": "ISC",
