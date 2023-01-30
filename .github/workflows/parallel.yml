@@ -1,9 +1,10 @@
 name: Cypress Tests - Parallel
 
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
+
   # schedule:
   #   - cron: '5 4 1,4,7,12,15,17,21,25,28 * *'
   #   # At 04:05 on day-of-month 1, 4, 7, 14, 15, 17, 21, 25, and 28.
